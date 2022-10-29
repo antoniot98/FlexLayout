@@ -1,0 +1,152 @@
+/*INITIAL SETTINGS*/
+:root{
+    box-sizing: border-box;
+}
+
+*,
+:after,
+:before{
+    box-sizing: inherit;
+}
+
+body * + *{
+    margin-top: 1.5em;
+}
+.container{
+    max-width: 1080px;
+    margin:0 auto;
+}
+body{
+    background-color: #709b40;
+    font-family: Calibri, sans-serif;
+}
+
+/*NAV SECTION*/
+
+.site_nav{
+    display: flex;
+    padding: .5em;
+    list-style-type: none;
+    background-color: #5f4b44;
+    border-radius: .2em;
+}
+ul.site_nav > li{
+        margin-top: 0;
+}
+
+ul.site_nav >li >a{
+    display: block;
+    padding: .5em 1em;
+    background-color: #cc5b5a;
+    color: white;
+    text-decoration:none;
+}
+ul.site_nav >li >a:hover{
+    background-color: #5f4b44;
+}
+
+ul.site_nav >li + li{
+    margin-left: .5em;
+
+}
+
+ul.site_nav > .nav_right{
+    margin-left:auto;
+}
+
+/*MAIN*/
+/*flex container*/
+main{
+    display: flex;
+}
+/*flex Items*/
+main > * + *{
+    margin-top: 0;
+    margin-left:1.5em;
+}
+.tile{
+    background-color: white;
+    padding: 1.5em;
+}
+
+.tile:first-child{
+    margin-top:0;
+}
+
+.column_main{
+    flex: 3;
+}
+
+
+
+
+
+
+/*SIDEBAR*/
+
+.login-form h3{
+    margin:0;
+    font-size: .9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.login-form label{
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+
+.login-form input[type="text"] .login-form input[type="password"]{
+    display: block;
+    width:100%;
+    margin-top:0;
+    border: 1px solid #dededede;
+    padding: .5em 1em;
+}
+
+.centered{
+    text-align: center;
+}
+
+.special-offer{
+    display:flex;
+    flex-direction: column;
+}
+
+a.cta_button {
+    display: block;
+    width:100%;
+    margin-top: auto;
+    text-decoration: none;
+    padding: .5em;
+    background-color: #cc5b5a;
+    color: white;
+}
+.cost{
+    margin-top:auto;
+    padding: 1.5em 0 ;
+}
+.cost{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cost > span{
+    margin-top:0;
+    line-height:.6em;
+}
+
+.cost_currency{
+    font-size: 2em;
+}
+.cost_dollars{
+    font-size: 4em;
+}
+.cost_cents{
+    font-size:1.5em;
+    align-self: flex-start;
+}
